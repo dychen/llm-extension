@@ -1,0 +1,20 @@
+{
+  "name": "Omnibar",
+  "version": "1.0.0.0",
+  "description": "LLM-based omnibar for website support",
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "exclude_matches": [],
+    "js": ["content-scripts/dist/bundle.js"],
+    "run_at": "document_idle"
+  }],
+  "background": {},
+  "icons": {},
+  "permissions": [],
+  "web_accessible_resources": [
+    "content-scripts/dist/index.html"
+  ],
+  "manifest_version": 2
+}
